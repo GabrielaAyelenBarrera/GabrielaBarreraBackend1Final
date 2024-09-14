@@ -1,0 +1,72 @@
+/* Estilos para el fondo de la página */
+body {
+    background-color: #f4f4f4; /* Un gris más claro para un fondo más suave */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Aplicado a todo el cuerpo */
+}
+
+/* Estilos para la fuente y tamaño de fuente */
+body, h3, h4, p, li, a, input {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente moderna y más legible */
+    color: #333; /* Color de texto más oscuro para mejor contraste */
+}
+
+/* Estilos para el título */
+h3 {
+    font-size: 28px; /* Título más grande */
+    font-weight: bold;
+    margin: 20px 0; /* Mayor espacio arriba y abajo */
+    color: #444; /* Color de título ligeramente más oscuro */
+}
+
+/* Estilos para la lista de productos */
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-width: 800px; /* Limitar el ancho para que no se extienda demasiado */
+    margin: 0 auto; /* Centrar la lista */
+}
+
+/* Estilos para los elementos de la lista de productos */
+li {
+    background: #fff; /* Fondo blanco para los elementos de la lista */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para resaltar */
+}
+
+/* Estilos para los enlaces de paginación */
+a {
+    color: #007bff; /* Color azul más estándar */
+    text-decoration: none;
+    font-weight: bold; /* Negrita para los enlaces */
+    padding: 8px 16px;
+    border-radius: 4px; /* Bordes redondeados para botones */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones suaves */
+}
+
+/* Estilos para los enlaces de paginación al pasar el cursor sobre ellos */
+a:hover {
+    background-color: #0056b3; /* Fondo azul oscuro al pasar el cursor */
+    color: #fff; /* Texto blanco al pasar el cursor */
+}
+
+/* Estilos para los enlaces de paginación inactivos */
+.disabled {
+    color: #6c757d; /* Color gris claro */
+    pointer-events: none; /* Evita los clics */
+    text-decoration: none; /* Remueve el subrayado */
+}
+
+/* Estilos para el campo de entrada de página */
+input {
+    width: 60px; /* Aumenta el ancho para mayor comodidad */
+    padding: 8px;
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 4px; /* Bordes redondeados */
+    margin-left: 10px;
+    font-size: 16px; /* Tamaño de fuente para mejor legibilidad */
+}

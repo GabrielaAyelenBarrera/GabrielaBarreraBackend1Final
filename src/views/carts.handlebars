@@ -1,0 +1,14 @@
+<h2>Carrito de Compras</h2>
+<ul id="carts-list">
+  {{#each cartItems}}
+    <li>
+      <strong>{{this.productTitle}}</strong> <br>
+      Cantidad: {{this.quantity}}
+    </li>
+  {{/each}}
+</ul>
+<button id="clear-cart">Vaciar Carrito</button>
+<button id="checkout">Finalizar Compra</button>
+<a href="/products">Volver a la tienda</a>
+
+<script src="/js/carts.js"></script>

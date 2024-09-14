@@ -42,10 +42,11 @@ Este proyecto utiliza un carrito de compras hardcodeado, lo que significa que to
   - URL: `/api/carts/66e0fca6dec613183ca7a872(ejemplo de cart)/products/66e0fca1dec613183ca7950e(ejemplo de prod)`
    Eliminar un Producto de un Carrito
 - **PRODUCTS**: 
-1. Obtener Todos los productos - GET http://localhost:8080/api/products
-2. Obtener un producto por ID - GET http://localhost:8080/api/products/66e5e1a4128a729962cf608f(ejemplo de prod) 
-4. Crear un Nuevo producto- POST http://localhost:8080/api/products
-5. Eliminar un Producto - DELETE http://localhost:8080/api/products/66e0fca6dec613183ca7a872(ejemplo de prod)
+1. Obtener Todos los productos - GET /api/products
+2. Obtener un producto por ID - GET /api/products/66e5e1a4128a729962cf608f(ejemplo de prod) 
+4. Crear un Nuevo producto- POST /api/products
+5. Eliminar un Producto - DELETE /api/products/66e0fca6dec613183ca7a872(ejemplo de prod)
+
 ## Frontend
 
 ### Página de Productos

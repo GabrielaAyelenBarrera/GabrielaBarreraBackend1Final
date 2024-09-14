@@ -16,13 +16,36 @@ Este proyecto utiliza un carrito de compras hardcodeado, lo que significa que to
 
 ## Rutas relevantes
 
-- **API para agregar productos al carrito**: 
+- **CARTS**: 
+  - Método: `GET`
+  - URL: `/api/carts/`
+  Obtener Todos los Carritos.
+  - Método: `GET`
+  - URL: `/api/carts/66e5e1a4128a729962cf608f(ejemplo de cart)`
+  Obtener un Carrito por ID
   - Método: `POST`
-  - URL: `/api/carts/{cartId}/products`
-  - Body: `{ "productId": "ID_DEL_PRODUCTO", "quantity": CANTIDAD }`
-  
-  Este endpoint agrega un producto al carrito especificado.
-
+  - URL: `/api/carts/`
+  Crear un Nuevo Carrito.
+  - Método: `POST`
+  - URL: `/api/carts/66e0fca6dec613183ca7a872(ejemplo de cart)/products`
+  - Body: `{"productId": "66e0fca1dec613183ca7950e"(ejemplo de prod),"quantity": 2}`
+  Agregar un Producto a un Carrito.
+  - Método: `PUT`
+  - URL: `/api/carts/66e0fca6dec613183ca7a872(ejemplo de cart)/products/66e0fca1dec613183ca7950e (ejemplo de prod)`
+  - Body: `{"quantity": 5}`
+  Actualizar la Cantidad de un Producto en un Carrito.
+  - Método: `PUT`
+  - URL: `/api/carts/66e0fca6dec613183ca7a872(ejemplo de cart)`
+  - Body: `[{"productId": "66e0fca1dec613183ca796d9","quantity": 1}]`
+   Actualizar el Carrito con un Arreglo de Productos.
+  - Método: `DELETE`
+  - URL: `/api/carts/66e0fca6dec613183ca7a872(ejemplo de cart)/products/66e0fca1dec613183ca7950e(ejemplo de prod)`
+   Eliminar un Producto de un Carrito
+- **PRODUCTS**: 
+1. Obtener Todos los productos - GET http://localhost:8080/api/products
+2. Obtener un producto por ID - GET http://localhost:8080/api/products/66e5e1a4128a729962cf608f(ejemplo de prod) 
+4. Crear un Nuevo producto- POST http://localhost:8080/api/products
+5. Eliminar un Producto - DELETE http://localhost:8080/api/products/66e0fca6dec613183ca7a872(ejemplo de prod)
 ## Frontend
 
 ### Página de Productos

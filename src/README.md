@@ -1,11 +1,11 @@
 
-# Proyecto eCommerce - Carrito de Compras Hardcodeado
+# Proyecto eCommerce - 
 
 Este proyecto utiliza un carrito de compras hardcodeado, lo que significa que todos los productos que se agregan desde la interfaz web se almacenan en un carrito específico cuyo ID ya está predefinido en el código.
 
 ## Cómo funciona
 
-1. **ID del carrito hardcodeado**: El ID del carrito está definido en el archivo `public/js/products.js` como una constante llamada `hardcodedCartId`. Asegúrate de que este ID corresponda a un carrito existente en tu base de datos de `carts`.
+1. **ID del carrito hardcodeado**: El ID del carrito está definido en el archivo `public/js/products.js` como una constante llamada `hardcodedCartId`. Este ID corresponde a un carrito existente en mi base de datos de `carts`.
 
 2. **Agregado de productos al carrito**: 
    - Cuando un usuario hace clic en el botón **Agregar al Carrito** en la página de productos, el producto seleccionado se agrega directamente al carrito cuyo ID está hardcodeado.
